@@ -1,0 +1,49 @@
+/* container section */
+.container {
+    padding: 5%;
+}
+
+.container__label {
+    margin: 4%;
+    font-size: 1.1em;
+}
+
+.container__div {
+    padding: 0.5%;
+}
+
+.container__input {
+    height: 30px;
+}
+
+.container__add {
+    padding: 2%;
+    border-width: 3px;
+    border-style: solid;
+    margin: 4%;
+    width: 200px;
+}
+
+/* input section */
+#prodId {
+    margin-left: 26px;
+}
+
+#prodPrice {
+    margin-left: 7px;
+}
+
+/* table section */
+.table {
+    padding: 3%;
+}
+
+th {
+    padding-right: 150px
+}
+
+/* error message section */
+#msg {
+    color: red;
+    margin: 20px;
+}
