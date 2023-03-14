@@ -11,9 +11,7 @@ function addProduct() {
         document.getElementById("msg").innerHTML = "Enter valid ProductId";
     } else if (!((pid >= 'A' && pid <= 'Z') || (pid >= 'a' && pid <= 'z') || (pid >= '0' && pid <= '9'))) {
         document.getElementById("msg").innerHTML = "Enter valid ProductName";
-    } else if (!(pprice >= '0' && pprice <= '9')) {
-        document.getElementById("msg").innerHTML = "Enter valid ProductPrice";
-    } else {
+    }  else {
         arr.push({
             ProductId: pid,
             ProductName: pname,
