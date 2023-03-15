@@ -4,7 +4,7 @@ function addProduct() {
     const pid = document.getElementById("prodId").value;
     const pname = document.getElementById("prodName").value;
     const pprice = document.getElementById("prodPrice").value;
-    const apt = /^[A-Za-z]+$/;
+    const apt = "^[a-zA-Z0-9_]*$";
     // applying required validations
     if (pid == "" || pname == "" || pprice == "") {
         document.getElementById("msg").innerHTML = "Enter values for all fields";
