@@ -4,12 +4,13 @@ function addProduct() {
     const pid = document.getElementById("prodId").value;
     const pname = document.getElementById("prodName").value;
     const pprice = document.getElementById("prodPrice").value;
+    const apt = /^[A-Za-z]+$/;
     // applying required validations
     if (pid == "" || pname == "" || pprice == "") {
         document.getElementById("msg").innerHTML = "Enter values for all fields";
     } else if (!((pid >= 'A' && pid <= 'Z') || (pid >= 'a' && pid <= 'z') || (pid >= '0' && pid <= '9') || pid == "_")) {
         document.getElementById("msg").innerHTML = "Enter valid ProductId";
-    } else if (!((pid >= 'A' && pid <= 'Z') || (pid >= 'a' && pid <= 'z') || (pid >= '0' && pid <= '9'))) {
+    } else if (!(pname.match(apt))) {
         document.getElementById("msg").innerHTML = "Enter valid ProductName";
     }  else {
         arr.push({
