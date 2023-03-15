@@ -12,7 +12,10 @@ function addProduct() {
         document.getElementById("msg").innerHTML = "Enter valid ProductId";
     } else if (!(pname.match(apt))) {
         document.getElementById("msg").innerHTML = "Enter valid ProductName";
-    }  else {
+    } else if(pprice < 0){
+        document.getElementById("msg").innerHTML = "Enter valid ProductPrice";
+    } 
+    else {
         arr.push({
             ProductId: pid,
             ProductName: pname,
